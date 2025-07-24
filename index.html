@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIBACAR TECHFEST 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: navy;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        nav {
+            background-color: navy;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       #EventList table {
+  border-collapse: collapse;       
+  width: 100%;                     
+  border: 3px solid navy;  
+}
+
+#EventList th,
+#EventList td {
+  border: 3px solid navy;  
+  padding: 10px;                        
+}
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .schedule-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .schedule-box {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .schedule-box:hover {
+            transform: translateY(-5px);
+        }
+        .schedule-box h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .schedule-box p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ZIBACAR TECHFEST 2025</h1>
+    <p>Join us for an exciting journey of techfest</p>
+</header>
+
+<nav>
+  <a href="#Info">Info</a>
+  <a href="#EventList">EventList</a> 
+  <a href="#schedule">Schedule</a>
+  <a href="#apply">Apply</a>
+  <a href="#contact">Contact us</a>
+</nav>
+
+
+<section id="Info">
+    <h2>Information About TechFest 2025</h2>
+    <p>TechFest 2025 is a premier technology festival bringing together innovators, developers, and enthusiasts to explore the latest in tech advancements. Engage in workshops, attend keynote sessions, and network with industry leaders.</p>
+</section>
+
+<section id="EventList">
+    <h2>EventList</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Description</th>
+                <th>Rules</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Hackthon</strong></td>
+                <td>A 24-hour coding marathon where teams compete to build innovative solutions to real-world problems.</td>
+                <td>Teams of 2-4 members. Bring your own laptops. No external help allowed during the event.</td>
+            </tr>
+            <tr>
+                <td><strong>CodeNinja</strong></td>
+                <td>A coding competition testing programming skills in multiple languages through several rounds.</td>
+                <td>Individual participation only. No cheating or plagiarism. Timed rounds.</td>
+            </tr>
+            <tr>
+                <td><strong>HackAI</strong></td>
+                <td>An AI-focused challenge where participants build AI-driven applications to solve challenges.</td>
+                <td>Teams of 2-3 members. Organizers provide datasets and tools. No external code reuse.</td>
+            </tr>
+            <tr>
+                <td><strong>Quiz Competition</strong></td>
+                <td>A fun and engaging quiz testing knowledge of technology and innovation.</td>
+                <td>Individual participation. No electronic devices allowed during quiz. Time-limited questions.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="schedule">
+    <h2>Event Schedule</h2>
+    <div class="schedule-container">
+        <div class="schedule-box">
+            <h3>9:00 AM</h3>
+            <p><strong>Opening Ceremony</strong></p>
+        </div>
+        <div class="schedule-box">
+            <h3>10:00 AM</h3>
+            <p><strong>Hackathon</strong></p>
+        </div>
+        <div class="schedule-box">
+            <h3>12:00 PM</h3>
+            <p><strong>Lunch Break</strong></p>
+        </div>
+        <div class="schedule-box">
+            <h3>1:00 PM</h3>
+            <p><strong>CodeNinja</strong></p>
+        </div>
+        <div class="schedule-box">
+            <h3>3:00 PM</h3>
+            <p><strong>HackAI</strong></p>
+        </div>
+        <div class="schedule-box">
+            <h3>4:00 PM</h3>
+            <p><strong>Quiz Competition</strong></p>
+        </div>
+        <div class="schedule-box">
+            <h3>5:00 PM</h3>
+            <p><strong>Results Declaration</strong></p>
+        </div>
+    </div>
+</section>
+
+<a href="register.html" class="apply-btn" id="apply">Finish to apply:</a>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us:</p>
+    <p>Email: <a href="mailto:techfest.com">techfest.com</a></p>
+    <p>Phone: +91 9876564765</p>
+</section>
+
+<script>
+    document.getElementById('registration-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Registration Submitted Successfully!');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
+
+
